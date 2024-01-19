@@ -28,7 +28,13 @@ public with sharing class FlowControlLoopsCollections {
      * @return "Hello World!" if x greater than y, otherwise return null.
      */
     public static String helloWorld(Integer x, Integer y) {
-        return null; // Replace null with the variable you used to store the result
+        String result = null;
+        if(x != null && y != null){
+            if(x > y){
+                result = 'Hello World!';
+            }
+        }
+        return result;
     }
 
     /**
@@ -40,7 +46,7 @@ public with sharing class FlowControlLoopsCollections {
      * @return true if the person is eligible to vote, false otherwise.
      */
     public static Boolean votingEligibility(Integer age) {
-        return null; // Replace null with the variable you used to store the result
+        return age >= 18 ? true : false;
     }
 
     /**
@@ -54,8 +60,16 @@ public with sharing class FlowControlLoopsCollections {
     public static Integer findMax(Integer num1, Integer num2) {
         // Initialize largestNum as null
         Integer largestNum = null;
-
-        return null; // Replace null with the variable you used to store the result
+        if(num1 != null && num2 !=null){
+            if(num1 > num2){
+                largestNum = num1;
+            }else if(num1 < num2){
+                largestNum = num2;
+            }else{
+                largestNum = num1;
+            }
+        }
+        return largestNum;
     }
 
 
@@ -67,7 +81,17 @@ public with sharing class FlowControlLoopsCollections {
      * @return A string indicating whether the number is "Positive", "Negative", or "Zero", or null if the number is null.
      */
     public static String checkNumber(Integer a) {
-        return null; // Replace null with the variable you used to store the result
+        String result = null;
+        if(a != null){
+            if(a > 0){
+                result = 'Positive';
+            }else if(a < 0){
+                result = 'Negative';
+            }else {
+                result = 'Zero';
+            }
+        }
+        return result;
     }
 
     /**
@@ -78,7 +102,15 @@ public with sharing class FlowControlLoopsCollections {
      * @return A string indicating whether the number is "Even" or "Odd", or null if the number is null.
      */
     public static String checkEvenOdd(Integer a) {
-        return null; // Replace null with the variable you used to store the result
+        String result = null;
+        if(a !=null){
+            if(Math.mod(a, 2) == 0){
+                result = 'Even';
+            }else{
+                result = 'Odd';
+            }
+        }
+        return result;
     }
 
     /**
@@ -88,7 +120,15 @@ public with sharing class FlowControlLoopsCollections {
      * @return A string indicating whether the input is "Empty", "Null", or "Contains Text".
      */
     public static String checkString(String a) {
-        return null; // Replace null with the variable you used to store the result
+        String result = null;
+            if (a == null) {
+                result = 'Null';
+            } else if (a.length() > 0) {
+                result = 'Contains Text';
+            } else {
+                result = 'Empty';
+            }
+        return result;
     }
 
     /**
@@ -103,6 +143,7 @@ public with sharing class FlowControlLoopsCollections {
      * @return The grade for the given score.
      */
     public static String determineGrade(Integer score) {
+        
         return null; // Replace null with the variable you used to store the result
     }
 
